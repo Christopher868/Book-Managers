@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Delete Confirmation</title>
+</head>
+<body>
+    <h1>Confirmation</h1>
+    <p>Are you sure you want to delete the book titled: {{ book.title }}</p>
+    <p><a href="{% url 'book_delete' pk=book.pk %}">Confirm Deletion</a> | <a href="{% url 'book_list' %}">Cancel Deletion</a></p>
+
+</body>
+</html>
